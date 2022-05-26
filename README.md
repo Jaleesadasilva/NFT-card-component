@@ -22,8 +22,8 @@ A simple front-end challenge from Frontend Mentor
 
 ### Links
 
-- Solution URL: [https://github.com/jaleesadasilva/QR-code-component](https://your-solution-url.com)
-- Live Site URL: [https://jaleesadasilva.github.io/QR-code-component](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Jaleesadasilva/NFT-card-component](https://your-solution-url.com)
+- Live Site URL: [https://jaleesadasilva.github.io/NFT-card-component](https://your-live-site-url.com)
 
 ## My process
 
