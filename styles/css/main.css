@@ -1,0 +1,129 @@
+html {
+  font-size: 18px;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-color: #1f3251;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card__container {
+  background-color: #14253d;
+  border-radius: 18px;
+  padding: 1em;
+  width: 75%;
+  max-width: 350px;
+  box-sizing: border-box;
+  box-shadow: 5px 10px 20px 0px rgba(0, 0, 0, 0.05);
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+.card__container-image {
+  font-size: 0;
+  display: block;
+  position: relative;
+}
+.card__container-image img {
+  border-radius: 18px;
+  max-width: 100%;
+}
+.card__container-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 18px;
+  transition: background-color 500ms ease-in-out;
+}
+.card__container-image:hover::after, .card__container-image:active::after {
+  background: rgba(0, 255, 247, 0.5) url("../../images/icon-view.svg") center no-repeat;
+}
+.card__container-text h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  transition: color 400ms ease-in;
+}
+.card__container-text h1:hover, .card__container-text h1:active {
+  color: #00fff7;
+}
+.card__container-text p {
+  margin: 0;
+  font-weight: 300;
+  color: #8bacda;
+}
+.card__container-info {
+  display: flex;
+  justify-content: space-between;
+  color: #8bacda;
+  font-size: 0.8rem;
+  padding: 1em 0;
+}
+.card__container-info .item {
+  display: flex;
+  align-items: center;
+}
+.card__container-info .item img {
+  margin-right: 0.5em;
+}
+.card__container-info .item:first-of-type {
+  color: #00fff7;
+}
+.card__container-creation {
+  display: flex;
+  border-top: 1px solid #2f415b;
+  font-weight: 300;
+  align-items: center;
+  padding: 1em 0;
+  color: #8bacda;
+  font-size: 0.8rem;
+}
+.card__container-creation img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 0.2px solid white;
+  margin-right: 10px;
+}
+.card__container-creation a {
+  color: white;
+  font-weight: 400;
+  transition: color 400ms ease-in;
+}
+.card__container-creation a:hover, .card__container-creation a:active {
+  color: #00fff7;
+}
+
+.footer__challenge {
+  margin: 1.5em 0 0;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  text-align: center;
+}
+.footer__challenge a {
+  text-decoration: none;
+  color: #F1B24A;
+  font-weight: 500;
+  border-bottom: 1px solid #1f3251;
+  transition: border-bottom 500ms ease-in;
+}
+.footer__challenge a:hover, .footer__challenge a:focus, .footer__challenge a:active {
+  outline: 0;
+  border-bottom: 1px solid #F1B24A;
+}

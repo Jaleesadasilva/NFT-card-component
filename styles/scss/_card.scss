@@ -1,0 +1,113 @@
+.card {
+    &__container {
+        background-color: $dark-blue-cardbg;
+        border-radius: 18px;
+        padding: 1em;
+        width: 75%;
+        max-width: 350px;
+        box-sizing: border-box;
+        box-shadow: 5px 10px 20px 0px rgba(0, 0, 0, .05);
+        font-family: $primary_ff;
+        font-weight: 400;
+
+        &-image {
+            font-size: 0;
+            display: block;
+            position: relative;
+
+            img {
+                border-radius: 18px;
+                max-width: 100%;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                border-radius: 18px;
+                transition: background-color 500ms ease-in-out;
+            }
+
+            &:hover, 
+            &:active {
+                &::after {
+                    background: rgba($cyan, 0.5) url("../../images/icon-view.svg") center no-repeat;
+                }
+            }
+        }
+
+        &-text {
+            h1 {
+                font-size: 1.2rem;
+                font-weight: 700;
+                color: $white;
+                transition: color 400ms ease-in;
+
+                &:hover, 
+                &:active {
+                    color: $cyan;
+                }
+            }
+
+            p {
+                margin: 0;
+                font-weight: 300;
+                color: $soft-blue;
+            }
+        }
+
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            color: $soft-blue;
+            font-size: .8rem;
+            padding: 1em 0;
+
+            .item {
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin-right: .5em;
+                }
+
+                &:first-of-type {
+                    color: $cyan;
+                }
+            }
+        }
+
+        &-creation {
+            display: flex;
+            border-top: 1px solid $dark-blue-line;
+            font-weight: 300;
+            align-items: center;
+            padding: 1em 0;
+            color: $soft-blue;
+            font-size: .8rem;
+
+            img {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                border: .2px solid $white;
+                margin-right: 10px;
+            }
+
+            a {
+                color: $white;
+                font-weight: 400;
+                transition: color 400ms ease-in;
+
+
+                &:hover, 
+                &:active {
+                    color: $cyan;
+                }
+            }
+        }
+    }
+}

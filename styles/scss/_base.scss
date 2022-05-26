@@ -1,0 +1,41 @@
+// Font family
+$primary_ff         : 'Outfit', sans-serif;
+
+// Font Sizing
+$base_fs            : 18px;
+
+// Colors
+$white              : hsl(0, 0%, 100%);
+$soft-blue          : hsl(215, 51%, 70%);
+$cyan               : hsl(178, 100%, 50%);
+$dark-blue-mainbg   : hsl(218, 44%, 22%);
+$dark-blue-cardbg   : hsl(216, 50%, 16%);
+$dark-blue-line     : hsl(215, 32%, 27%);
+$light-gray         : hsl(212, 45%, 89%);
+
+$jal-yellow         : #F1B24A;
+
+html {
+    font-size: $base_fs;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    background-color: $dark-blue-mainbg;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    // Just to present it nicely for the challenge
+    min-height: 100vh;
+}
